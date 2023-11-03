@@ -1,0 +1,6 @@
+# docker-compose.override.yml
+version: '3'
+services:
+  app:
+    volumes:
+      - ./app:/app

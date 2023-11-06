@@ -1,9 +1,7 @@
-# Dockerfile.production
 FROM node:14.18.1
 
 WORKDIR /app
 
-# Важно для кеширования слоев
 COPY package*.json ./
 
 RUN npm install
@@ -12,4 +10,5 @@ COPY . .
 
 EXPOSE 8080
 
-CMD npm start
+CMD ["npm", "start"]
+
